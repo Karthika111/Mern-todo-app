@@ -1,0 +1,128 @@
+/* General Styles for the App */
+.App {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Header Styling */
+h1 {
+  font-size: 3rem;
+  color: #af6d4c;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/* Form Styles */
+form {
+  background-color: #fff;
+  padding: 20px;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input Field Styles */
+input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+  border-color: #af6d4c;
+}
+
+/* Button Styles */
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #af6d4c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e90e0e;
+}
+
+button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+/* Todo List Styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 450px;
+}
+
+li {
+  background-color: #fff;
+  padding: 16px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li span {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Hover effect for list items */
+li:hover {
+  background-color: #f1f1f1;
+}
+
+/* Loading Indicator Styling */
+.loading {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4CAF50;
+  margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  form {
+    width: 90%;
+    max-width: 100%;
+  }
+
+  ul {
+    width: 90%;
+  }
+}
